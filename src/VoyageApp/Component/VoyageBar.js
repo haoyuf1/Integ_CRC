@@ -128,7 +128,7 @@ export default function Bar(props) {
         chips.map( (element) => {
           data.append("groupby_fields", element);
          yfieldArr.push(element)
-         console.log("🚀[chips]: ", yfieldArr)
+        //  console.log("🚀[chips]: ", yfieldArr)
           // myMap1.set(index,element)
         })
 
@@ -143,13 +143,13 @@ export default function Bar(props) {
           headers: {'Authorization':AUTH_TOKEN}
         }).then(res => res.json())
         .then(function (response) {
-          console.log("{🔥data}", response)
+          // console.log("{🔥data}", response)
 
         let arr = []
 
           Object.values(response).forEach((element,index) =>{
-            console.log("💰Object.keys(element)", Object.keys(element))
-            console.log("💰Object.values(element", Object.values(element))
+            // console.log("💰Object.keys(element)", Object.keys(element))
+            // console.log("💰Object.values(element", Object.values(element))
       
                 arr.push({
                 x: Object.keys(element),
@@ -172,7 +172,7 @@ export default function Bar(props) {
     arr
    )
 
-   console.log("[🌲arr]", arr)
+  //  console.log("[🌲arr]", arr)
       })
     }
     setIsLoading(false)
