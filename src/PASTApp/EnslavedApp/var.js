@@ -33,17 +33,17 @@ export const enslaved_var_list = {
       gender: null,
       height: null,
       skin_color: null,
-      last_known_year_yyyy: null,
+      // last_known_year_yyyy: null,
       dataset: null,
       notes: null,
-      language_group: null,
+      // language_group: null,
     },
   
     post_disembark_location__geo_location__name: {
       post_disembark_location__geo_location__name: null,
     },
   
-    captive_status: {
+    captive_status__name: {
       captive_status__name: null,
     },
   
@@ -68,7 +68,7 @@ export const enslaved_var_list = {
   
     transactions: {
       transactions__transaction__date_yyyy: null,
-      transactions__transaction__amount: null,
+      // transactions__transaction__amount: null,
       transactions__transaction__place__geo_location__name: null,
       transactions__transaction__enslavers__enslaver_alias__identity__principal_alias:
         null,
