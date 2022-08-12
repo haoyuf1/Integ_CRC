@@ -116,22 +116,15 @@ export default function Navbar(props) {
                 display: { xs: "block", md: "none" },
               }}
             >
-              <MenuItem onClick={handleCloseNavMenu}>
-                {pageType !== "home" && pageType !== "documents" ? (
-                  // <IconButton
-                  //   aria-label="open drawer"
-                  //   onClick={() => setDrawerOpen(!drawerOpen)}
-                  // >
-                  //   <FilterAlt />
-                  //   <Typography>Filter</Typography>
-                  // </IconButton>
-                  <Typography 
-                    aria-label="open drawer"
-                    onClick={() => setDrawerOpen(!drawerOpen)}>
-                      Filter
-                  </Typography>
-                ) : null}
-              </MenuItem>
+              {pageType !== "home" && pageType !== "documents" ? (
+                <MenuItem onClick={handleCloseNavMenu}>
+                    <Typography 
+                      aria-label="open drawer"
+                      onClick={() => setDrawerOpen(!drawerOpen)}>
+                        Filter
+                    </Typography>
+                </MenuItem>
+              ) : null}
               <MenuItem onClick={handleCloseNavMenu}>
                 <Link to={"/voyage/scatter"} style={{ textDecoration: "none" }}>
                   Voyages
